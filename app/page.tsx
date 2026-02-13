@@ -5,6 +5,7 @@ import Blog from "@/components/Blog";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import SmoothScroll from "@/components/SmoothScroll";
+import ValentineModal from "@/components/ValentineModal";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <footer className="bg-primary text-white py-8 text-center">
           <p className="text-sm font-light tracking-wide">&copy; {new Date().getFullYear()} TIMELESS MODEST WEAR. All rights reserved.</p>
         </footer>
+        <ValentineModal />
       </main>
     </SmoothScroll>
   );
