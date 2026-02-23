@@ -5,6 +5,7 @@ import {
   Geographies,
   Geography,
   Marker,
+  ZoomableGroup,
 } from "react-simple-maps";
 
 type Place = {
@@ -24,7 +25,7 @@ const places: Place[] = [
   },
   {
     name: "Arunachal Pradesh",
-    coordinates: [94.7278, 28.2180],
+    coordinates: [94.7278, 28.218],
     note: "Lost in clouds & mountains ☁️⛰️",
   },
   {
@@ -48,76 +49,78 @@ export default function TravelMap() {
   return (
     <div className="w-full flex justify-center h-[520px]">
       <ComposableMap
+        projection="geoMercator"
         projectionConfig={{ scale: 420 }}
-        center={[80, 25]}
         style={{ width: "100%", height: "100%" }}
       >
-        {/* 🌍 Map */}
-        <Geographies geography={geoUrl}>
-          {({ geographies }) =>
-            geographies.map((geo) => (
-              <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                style={{
-                  default: {
-                    fill: "#F3F4F6",
-                    outline: "none",
-                  },
-                  hover: {
-                    fill: "#E5E7EB",
-                    outline: "none",
-                  },
-                  pressed: {
-                    fill: "#D1D5DB",
-                    outline: "none",
-                  },
-                }}
+        <ZoomableGroup center={[80, 25]} zoom={1}>
+          {/* 🌍 Map */}
+          <Geographies geography={geoUrl}>
+            {({ geographies }) =>
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  style={{
+                    default: {
+                      fill: "#F3F4F6",
+                      outline: "none",
+                    },
+                    hover: {
+                      fill: "#E5E7EB",
+                      outline: "none",
+                    },
+                    pressed: {
+                      fill: "#D1D5DB",
+                      outline: "none",
+                    },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
+
+          {/* 📍 Markers */}
+          {places.map((place, index) => (
+            <Marker key={index} coordinates={place.coordinates}>
+              {/* dot */}
+              <circle
+                r={6}
+                fill="#C4A484"
+                stroke="#fff"
+                strokeWidth={2}
+                className="transition-transform duration-300 hover:scale-125"
               />
-            ))
-          }
-        </Geographies>
 
-        {/* 📍 Markers */}
-        {places.map((place, index) => (
-          <Marker key={index} coordinates={place.coordinates}>
-            {/* dot */}
-            <circle
-              r={6}
-              fill="#C4A484"
-              stroke="#fff"
-              strokeWidth={2}
-              className="transition-transform duration-300 hover:scale-125"
-            />
+              {/* place name */}
+              <text
+                textAnchor="middle"
+                y={-18}
+                style={{
+                  fontFamily: "serif",
+                  fill: "#374151",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                }}
+              >
+                {place.name}
+              </text>
 
-            {/* place name */}
-            <text
-              textAnchor="middle"
-              y={-18}
-              style={{
-                fontFamily: "serif",
-                fill: "#374151",
-                fontSize: "12px",
-                fontWeight: "600",
-              }}
-            >
-              {place.name}
-            </text>
-
-            {/* cute note */}
-            <text
-              textAnchor="middle"
-              y={22}
-              style={{
-                fontFamily: "serif",
-                fill: "#6B7280",
-                fontSize: "10px",
-              }}
-            >
-              {place.note}
-            </text>
-          </Marker>
-        ))}
+              {/* cute note */}
+              <text
+                textAnchor="middle"
+                y={22}
+                style={{
+                  fontFamily: "serif",
+                  fill: "#6B7280",
+                  fontSize: "10px",
+                }}
+              >
+                {place.note}
+              </text>
+            </Marker>
+          ))}
+        </ZoomableGroup>
       </ComposableMap>
     </div>
   );
