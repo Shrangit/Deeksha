@@ -43,7 +43,7 @@ export default function Hero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/df.png"
+                    src="/banner.png"
                     alt="Timeless Modest Wear Background"
                     fill
                     priority
