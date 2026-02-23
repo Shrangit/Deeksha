@@ -5,12 +5,12 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
 const baseImages = [
-    { src: "/images/img1.jpeg", alt: "Elegant Abaya Detail" },
-    { src: "/images/img2.jpeg", alt: "Modern Modest Look" },
-    { src: "/images/img7.jpeg", alt: "Beachside Modesty" },
-    { src: "/images/img4.jpeg", alt: "Nature Vibes" },
-    { src: "/images/img5.jpeg", alt: "Timeless Elegance" }, // Assuming this exists based on About.tsx
-    { src: "/images/img6.jpeg", alt: "Serene Atmosphere" },
+    { src: "/images/1.png", alt: "Elegant Abaya Detail" },
+    { src: "/images/2.png", alt: "Modern Modest Look" },
+    { src: "/images/3.png", alt: "Nature Vibes" },
+    { src: "/images/4.png", alt: "Beachside Modesty" },
+    { src: "/images/5.png", alt: "Timeless Elegance" }, // Assuming this exists based on About.tsx
+    { src: "/images/6-new.png", alt: "Serene Atmosphere" },
 ];
 
 // Create 16 images by repeating the base ones
@@ -58,9 +58,9 @@ export default function Gallery() {
                     className="text-center mb-16"
                 >
                     <span className="text-accent uppercase tracking-widest text-sm font-semibold">Portfolio</span>
-                    <h2 className="text-4xl md:text-5xl font-serif text-primary mt-3 mb-6">Visual Journey</h2>
+                    <h2 className="text-4xl md:text-5xl font-serif text-primary mt-3 mb-6">Her Style Journey</h2>
                     <p className="max-w-2xl mx-auto text-gray-600 font-light">
-                        Explore our curated moments of style, grace, and timeless beauty.
+                        Where creativity meets confidence and every look feels like her.
                     </p>
                 </motion.div>
 

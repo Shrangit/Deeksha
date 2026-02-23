@@ -43,12 +43,12 @@ export default function Hero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/banner.jpeg"
+                    src="/df.png"
                     alt="Timeless Modest Wear Background"
                     fill
                     priority
                     className="object-cover object-center"
-                    quality={100}
+                    sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-black/30" /> {/* Overlay using Tailwind opacity */}
             </div>
@@ -59,14 +59,23 @@ export default function Hero() {
                     ref={textRef}
                     className="text-5xl md:text-7xl lg:text-9xl font-serif font-bold tracking-tighter mb-6"
                 >
-                    TIMELESS
+                    IN BETWEEN MOMENTS
                 </h1>
+
                 <p
                     ref={subTextRef}
-                    className="text-lg md:text-xl font-light tracking-[0.2em] uppercase max-w-2xl text-balance"
+                    className="text-lg md:text-xl font-light tracking-[0.2em] uppercase max-w-2xl text-balance leading-relaxed"
                 >
-                    Modest wear for the modern soul
+                    somewhere between chaos and calm,
+                    late nights and quiet mornings,
+                    i found a feeling that feels like you
                 </p>
+
+                <p className="mt-6 text-sm md:text-base font-light tracking-widest opacity-80 italic">
+                    not everything needs a name to be real
+                </p>
+
+                <i>and maybe this is how something beautiful begins</i>
             </div>
 
             {/* Scroll Indicator */}

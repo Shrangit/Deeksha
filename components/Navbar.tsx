@@ -18,10 +18,10 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { name: "Home", href: "/" },
-        { name: "Collection", href: "#gallery" },
-        { name: "About", href: "#about" },
-        { name: "Contact", href: "#contact" },
+        { name: "Journey", href: "/" },
+        { name: "Gallery", href: "#gallery" },
+        { name: "Her Story", href: "#about" },
+        { name: "Connect", href: "#contact" },
     ];
 
     return (

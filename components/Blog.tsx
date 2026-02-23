@@ -9,7 +9,7 @@ const blogPosts = [
         title: "Embracing Modesty in Modern Fashion",
         excerpt: "Discover how to blend contemporary trends with timeless modest values for a look that is both chic and respectful.",
         date: "October 10, 2023",
-        image: "/images/img7.jpeg",
+        image: "/images/a.png",
         category: "Style Guide",
     },
     {
@@ -17,7 +17,7 @@ const blogPosts = [
         title: "The Art of Layering for Every Season",
         excerpt: "Master the art of layering with our comprehensive guide to staying comfortable and stylish year-round.",
         date: "November 5, 2023",
-        image: "/images/img5.jpeg",
+        image: "/images/b.png",
         category: "Tips & Tricks",
     },
     {
@@ -25,7 +25,7 @@ const blogPosts = [
         title: "Sustainable Fabrics: A Conscious Choice",
         excerpt: "Why we choose eco-friendly materials and how you can build a more sustainable wardrobe.",
         date: "December 12, 2023",
-        image: "/images/img2.jpeg",
+        image: "/images/c.png",
         category: "Sustainability",
     },
 ];

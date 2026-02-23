@@ -17,10 +17,10 @@ export default function About() {
                         className="w-full md:w-1/2 relative h-[500px]"
                     >
                         <Image
-                            src="/images/img26.jpeg" // Using the last image (gallery-5) for About
+                            src="/about.png" // Using the last image (gallery-5) for About
                             alt="About Timeless Modest Wear"
                             fill
-                            className="object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-700"
+                            className="object-cover object-[50%_30%] rounded-sm grayscale hover:grayscale-0 transition-all duration-700"
                         />
                     </motion.div>
 
@@ -33,19 +33,30 @@ export default function About() {
                         className="w-full md:w-1/2"
                     >
                         <h2 className="text-4xl md:text-5xl font-serif mb-8 text-primary">Our Story</h2>
-                        <div className="space-y-6 text-lg font-light leading-relaxed text-gray-700">
+                        <div className="space-y-6 text-[17px] font-light leading-relaxed text-gray-700">
                             <p>
-                                Welcome to <span className="font-semibold text-accent">TIMELESS</span>, where modesty meets modern elegance.
-                                Born from a passion for refined aesthetics, we curate pieces that empower women to express their style with grace and confidence.
-                            </p>
-                            <p>
-                                Our collection is inspired by the serene landscapes of Indonesia and the quiet strength of the modern Muslimah.
-                                Each piece is designed to be versatile, comfortable, and enduring—transcending fleeting trends.
-                            </p>
-                            <p>
-                                Whether you are strolling along the beach or navigating the city, our wear moves with you,
-                                offering a silhouette of understated luxury.
-                            </p>
+  Welcome to <span className="font-semibold text-accent">Deeksha Voyage</span> — where every journey becomes a story, and every story becomes a feeling.
+</p>
+
+<p>
+  She is someone who finds magic in new places and unfamiliar streets, who believes that every destination holds a piece of the heart waiting to be discovered. From quiet beaches to bustling cities, she carries a sense of wonder wherever she goes.
+</p>
+
+<p>
+  Meeting new people, listening to their stories, and sharing smiles with strangers—this is what fuels her spirit. There’s a rare warmth in her presence, the kind that makes conversations feel like poetry and moments feel like memories.
+</p>
+
+<p>
+  Her style reflects who she is—graceful, free, and quietly captivating. Effortless yet meaningful. Soft, yet full of strength. She doesn’t follow trends, she creates her own rhythm—just like the paths she chooses to walk.
+</p>
+
+<p>
+  Whether she’s chasing sunsets by the sea or getting lost in the charm of a new city, she moves with a calm confidence and a heart open to the world.
+</p>
+
+<p className="italic">
+  “She isn’t just exploring places… she’s collecting moments, stories, and souls along the way.”
+</p>
                         </div>
 
                         <div className="mt-10">

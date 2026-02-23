@@ -105,9 +105,9 @@ export default function ValentineModal() {
                    
                    <div className="text-center space-y-2">
                      <h2 className="text-3xl font-extrabold text-gray-800 font-serif leading-tight">
-                       Will you be my Valentine?
+                       I’m really enjoying us… can we keep choosing each other?
                      </h2>
-                     <p className="text-gray-500 text-sm">Please say yes! 🥺</p>
+                     <p className="text-gray-500 text-sm">Slowly, honestly, and genuinely. 💞</p>
                    </div>
                    
                    <div className="flex items-center gap-6 w-full justify-center relative min-h-[60px]">
@@ -153,7 +153,7 @@ export default function ValentineModal() {
                     <h3 className="text-3xl font-bold text-pink-600">
                        Yay! ❤️
                     </h3>
-                    <p className="text-gray-500 font-medium">Best decision ever!</p>
+                    <p className="text-gray-500 font-medium">You just made my day!</p>
                   </div>
 
                   <motion.div 
@@ -163,8 +163,9 @@ export default function ValentineModal() {
                     className="p-6 bg-pink-50 rounded-2xl border border-pink-100 shadow-inner"
                   >
                     <p className="text-lg text-gray-700 leading-relaxed font-serif italic">
-                      "To my dearest friend <span className="font-bold text-pink-600">Miana</span>,<br/><br/>
-                      Every moment with you is a memory I cherish. Thank you for being such an amazing part of my life. Happy Valentine's Day!"
+                      "To my favorite person <span className='font-bold text-pink-600'>Dee</span>,<br/><br/>
+I don’t know what we’ll call this yet… but I know I truly cherish every conversation, every laugh, and every little moment with you.<br/><br/>
+Getting to know you has been something really special to me, and I’m really happy it’s you.""
                     </p>
                   </motion.div>
                 </motion.div>
